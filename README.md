@@ -15,6 +15,14 @@ Ultra simple in-game debug window for Unity.
 CanvasDebug.Log("Test");
 ```
 
+# How does it work?
+
+The Debug UI prefab is a full-screen canvas with a scroll view inside. When you run the static/global `CanvasDebug.Log()` method, it finds that prefab in your scene and puts a new Text item at the top (using LogItem prefab).
+
+## Customize text
+
+You can change the font size, color, etc using the **LogItem prefab.**
+
 # References
 
 - [In-Game Debug Console for Unity 3D](https://assetstore.unity.com/packages/tools/gui/in-game-debug-console-68068)
